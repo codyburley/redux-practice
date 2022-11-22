@@ -21,20 +21,45 @@
 
   &__input {
     font-family: inherit;
+    border: 1px solid rgb(0, 132, 255);
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 0.5rem;
+
+    &:focus {
+      outline: 1px solid rgb(11, 28, 85);
+    }
   }
 
   &__author {
     font-family: inherit;
+    border: 1px solid rgb(0, 132, 255);
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 0.5rem;
+
+    &:focus {
+      outline: 1px solid rgb(11, 28, 85);
+    }
+
   }
 
   &__text-area {
     font-family: inherit;
+    border: 1px solid rgb(0, 132, 255);
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 0.5rem;
     resize: none;
+
+    &:focus {
+      outline: 1px solid rgb(11, 28, 85);
+    }
   }
 
   &__button {
     background: none;
-    background-color: rgb(11, 11, 85);
+    background-color: rgb(0, 132, 255);
     margin: 1rem auto;
     color: white;
     border: none;
@@ -44,5 +69,10 @@
     cursor: pointer;
     outline: inherit;
     border-radius: 10px;
+    transition: all 0.1s;
+
+    &:hover {
+      background-color: rgb(11, 28, 85);
+    }
   }
 }
