@@ -1,0 +1,22 @@
+@use './styles/variables' as *;
+@use './styles/mixins' as *;
+@use './styles/fonts' as *;
+
+.App {
+  padding: 1rem 5%;
+
+  @include tablet {
+    padding: 3rem 20%;
+  }
+
+  @include desktop {
+    padding: 3rem 0;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    @include font-page-header;
+  }
+}

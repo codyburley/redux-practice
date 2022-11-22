@@ -45,13 +45,14 @@ const AddPostForm = () => {
           value={title}
           onChange={onTitleChanged}
         />
-        <label htmlFor="postAuthor">Author:</label>
-        <select id="postAuthor" value={userId} onChange={onAuthorChanged}>
+        <label htmlFor="postAuthor" className="post-form__label">Author:</label>
+        <select className="post-form__author" id="postAuthor" value={userId} onChange={onAuthorChanged}>
           <option value=""></option>
           {usersOptions}
         </select>
-        <label htmlFor="postContent">Post Content:</label>
+        <label className="post-form__label" htmlFor="postContent">Post Content:</label>
         <textarea
+          className="post-form__text-area"
           type="text"
           id="postContent"
           name="postContent"
@@ -59,6 +60,7 @@ const AddPostForm = () => {
           onChange={onContentChanged}
         />
         <button
+          className="post-form__button"
           type="button"
           onClick={onSavePostClicked}
           disabled={!canSave}

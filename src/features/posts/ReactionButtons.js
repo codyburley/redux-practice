@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { reactionAdded } from "./postsSlice";
-import React from 'react'
+import React from 'react';
+import './AddPostForm.scss';
 
 const reactionEmoji = {
   thumbsUp: '👍',

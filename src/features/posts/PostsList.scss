@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/fonts' as *;
+
+.posts-list {
+
+  &__title {
+    @include font-section-header
+  }
+
+  &__post {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  &__post-title {
+    margin: 0;
+    @include font-post-header;
+  }
+
+  &__content {
+    @include font-body-copy;
+  }
+}

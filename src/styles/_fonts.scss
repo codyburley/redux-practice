@@ -1,0 +1,44 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap');
+
+@mixin font-page-header() {
+  font-size: 3rem;
+
+  @include tablet {
+    font-size: 4rem;
+  }
+}
+
+@mixin font-section-header() {
+  font-size: 2rem;
+
+  @include tablet {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin font-post-header() {
+  font-size: 1.6rem;
+
+  @include tablet {
+    font-size: 2rem;
+  }
+}
+
+@mixin font-body-copy() {
+  font-size: 1.4rem;
+
+  @include tablet {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-timestamp() {
+  font-size: 1.2rem;
+
+  @include tablet {
+    font-size: 1.4rem;
+  }
+}
