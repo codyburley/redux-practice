@@ -4,9 +4,9 @@ import sub from "date-fns/sub";
 const initialState = [
   {
     id: '1',
-    title: 'Test Title 1',
-    content: 'Some content 1',
-    date: sub(new Date(), { minutes: 10 }).toISOString(),
+    title: 'Practice App for Redux',
+    content: 'Listing app built to try Redux for the first time.',
+    date: sub(new Date(), { minutes: 5 }).toISOString(),
     reactions: {
       thumbsUp: 0,
       wow: 0,
@@ -17,9 +17,9 @@ const initialState = [
   },
   {
     id: '2',
-    title: 'Test Title 2',
-    content: 'Some content 2',
-    date: sub(new Date(), { minutes: 5 }).toISOString(),
+    title: 'Slices',
+    content: 'All state managed globally.',
+    date: sub(new Date(), { minutes: 10 }).toISOString(),
     reactions: {
       thumbsUp: 0,
       wow: 0,
